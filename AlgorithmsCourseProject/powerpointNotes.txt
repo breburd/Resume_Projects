@@ -1,0 +1,27 @@
+Introduction:
+	Hello, I am Breanna Burd and I will be presenting a study that uses fuzzy logic in industrial sewing machines to control the speed of the feeding mechanism.
+
+Overview: 
+	The main problem that this paper focused on was the feeding mechanism on industrial sewing machines. When the feeding mechanism feeds fabric in too slowly or too fast, the sewing machine can create uneven stitches leading to defects in the finished products. The force applied by the feeding mechanism must adapt to the varying parameters, which can include: the type of fabric, the number of layers of fabric, and the speed of the sewing machine. This can be difficult to implement because there are so many types of fabric and each fabric has a varying thickness or stretchiness. This study specifically focused on stretchy or flexible materials. The chart on the left displays the ideal force applied by the feeding mechanism over time. When there is no fabric, there should be little to no force applied because nothing is actually being sewn and there is nothing to be fed into the machine. When there are four plies/layers of fabric, a lot of force needs to be applied because the feeding mechanism must move all four layers of fabric simultaneously so that the stitch is created in the expected location through each of the layers of fabric.
+
+Initial Problem:
+	As we all are aware, most clothing items are made industrially these days. I am sure each of you has possibly bought a shirt and realized there was a hole along the seam even though it was brand new. These are the types of problems that can be reduced by implementing fuzzy logic to control the feeding mechanism. 
+	This chart above shows the displacement of the presser-foot, which controls the speed of the sewing machine needle. The chart below, shows the ideal force applied on the presser-foot. These charts look very different, which indicates there may be a problem. The top chart actually shows presser-foot bouncing, which generally occurs when there is specifically a problem with the fabric feeding mechanism. The presser-foot bouncing is a result of the fabric either not being moved by the feeding mechanism or the fabric being moved too quickly by the feeding mechanism. 
+	The goal of this study is to support adapting the feeding mechanism to handle changing the number of plies of fabric on the spot. I'm not sure if many of you sew, but when you are sewing, it is very common for the number of layers of fabric to change often. The hem of a T-shirt is often only two layers of fabric because the edge is folded over to hide the raw edge of fabric and to guarantee that the bottom of the T-shirt is even and won't fray.
+
+Approach:
+	The authors of this study performed several controller designs in order to identify the best-suited controller to be implemented in the industry. This fuzzy system is the final controller designs that the authors settled on, but I will discuss a more complex design that was used for analysis. As we can see the two parameters that are used specifically for this controller are the number of plies and the sewing speed. Then the feeding mechanism force is updated 
+
+
+
+
+
+Rib fabric is just what you'd expect, it has a ribbed texture with vertical lines/ridges. The interlock fabric, on the other hand, has a consistent texture on both sides, creating a smooth fabric
+
+When attempting to sew on multiple plies, we must recognize that more force is required on the presser-foot the more plies/layers of fabric there are. If you have never sewn before, it is common to be sewing over multiple plies, especially when sewing seams. Seams are generally created by folding the edge of the fabric in order to remove the chance of any frayed edges.
+
+Several controller designs were implemented in this study. The most accurate controller design used a combined PID and fuzzy logic controller, but this was not practical for industry usage. The variables that were used in the study are sewing speed, presser-foot displacement, the fabric types (rib and interlock), and the number of plies. 
+
+The crisp output is not as smooth as what we have seen so far with the results from the course modules, but in this case, it makes sense. This is because, if we take a closer look at the rules
+
+Unfortunately, I was unable to acquire the original datasets used for this study because the individual has fallen ill, but the output variable centers were provided in the results as we can see in chart C. I used these centers to create the crisp (defuzzified) output
